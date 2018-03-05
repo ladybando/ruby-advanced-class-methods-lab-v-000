@@ -50,4 +50,7 @@ class Song
       self.create_by_name(name)
     end
   end
+  def self.alphabetical
+    self.all.sort_by(&:name)
+  end
 end
